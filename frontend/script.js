@@ -19,7 +19,7 @@ function login() {
 
     toggleLoading('loading-login', true);
 
-    fetch('http://localhost:5000/login', {
+    fetch('http://localhost:5000/api/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -76,7 +76,7 @@ function addInterests() {
         return;
     }
 
-    fetch('http://localhost:5000/add-interests', {
+    fetch('http://localhost:5000/api/add-interests', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         toggleLoading('loading-recommendations', true);
 
-        fetch('http://localhost:5000/recommendations', {
+        fetch('http://localhost:5000/api/recommendations', {
             method: 'GET',
             credentials: 'include'  // Include credentials (cookies/sessions)
         })
