@@ -188,3 +188,4 @@ def hybrid_recommendation(recommended_electives_interest, avg_domain_grades_inte
 
 if __name__ == '__main__':
     app.run(debug=True)
+    
