@@ -38,7 +38,7 @@ core_subjects, electives = load_subjects()
 grade_mapping = load_grade_mapping()
 
 # Login route
-@app.route('/login', methods=['POST'])
+@app.route('/api/login', methods=['POST'])
 def login():
     data = request.json
     register_number = data.get('register_number')
@@ -56,7 +56,7 @@ def login():
         return jsonify({"message": "Invalid credentials"}), 401
 
 # Add student interests
-@app.route('/add-interests', methods=['POST'])
+@app.route('/api/add-interests', methods=['POST'])
 # Example of improved error handling
 def add_interests():
     data = request.json
@@ -84,7 +84,7 @@ def add_interests():
 
 # Get recommended courses
 # Get recommended courses
-@app.route('/recommendations', methods=['GET'])
+@app.route('/api/recommendations', methods=['GET'])
 def recommend():
     # Get register number from session
     register_number = session.get('register_number')
