@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Recommender</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Course Recommender</h1>
+
+    <!-- Login Form -->
+    <div id="login-form">
+        <label for="register_number_input">Register Number:</label>
+        <input type="text" id="register_number_input" placeholder="Enter your register number">
+        <button onclick="login()">Login</button>
+        <div id="loading-login" class="hidden">Loading...</div>
+    </div>
+
+    <!-- User Details Section -->
+    <div id="user-details" class="hidden user-section">
+        <h3>User Details</h3>
+        <p><strong>Name:</strong> <span id="name"></span></p>
+        <p><strong>Register Number:</strong> <span id="register_number"></span></p>
+        <p><strong>CGPA:</strong> <span id="cgpa"></span></p>
+        <p><strong>Dbms:</strong> <span id="dbms"></span></p>
+        <p><strong>Ai:</strong> <span id="ai"></span></p>
+        <p><strong>Os:</strong> <span id="os"></span></p>
+        <p><strong>Cc:</strong> <span id="cc"></span></p>
+        <p><strong>Fla:</strong> <span id="fla"></span></p>
+        <p><strong>Cn:</strong> <span id="cn"></span></p>
+        <p><strong>Sepm:</strong> <span id="sepm"></span></p>
+    </div>
+
+    <!-- Add Interests Form -->
+    <div id="interests-form" class="hidden form-section">
+        <h3>Update Your Interests</h3>
+        <div class="interest-options">
+            <div class="checkbox-group">
+                <input type="checkbox" id="interest1" value="Networking">
+                <label for="interest1">Networking</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="interest2" value="Database System">
+                <label for="interest2">Database System</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="interest3" value="Operating Systems">
+                <label for="interest3">Operating Systems</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="interest4" value="Telecommunication">
+                <label for="interest4">Telecommunication</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="interest5" value="Machine Learning">
+                <label for="interest5">Machine Learning</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="interest6" value="Software Engineering">
+                <label for="interest6">Software Engineering</label>
+            </div>
+        </div>
+        <button onclick="addInterests()">Update Interests</button>
+        <button id="getRecommendationsButton">Get Recommendations</button>
+
+        <div id="loading-recommendations" class="hidden">Loading...</div>
+    </div>
+
+    <!-- Messages -->
+    <div class="message" id="message"></div>
+    <div class="error" id="error"></div>
+
+    <!-- Recommended Courses -->
+    <div class="courses hidden" id="courses">
+        <h3>Recommended Courses</h3>
+        <ul id="recommended-courses"></ul> <!-- Ensure this ID matches the JavaScript -->
+    </div>
+    <div class="message" id="message"></div>
+    <div class="error" id="error"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

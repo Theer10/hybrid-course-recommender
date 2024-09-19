@@ -1,0 +1,22 @@
+{
+    "core_subjects": {
+        "Database_Design_And_Management": "Database System",
+        "Computer_Networks": "Networking",
+        "Operating_System": "Operating Systems",
+        "Formal_Language_and_Automata": "Computer Linguistics",
+        "Computer_Communication": "Networking",
+        "Software_Engineering_and_Project_Management": "Software Engineering",
+        "Artificial_Intelligence": "Machine Learning"
+    },
+    "electives": {
+        "Wireless Mobile Communication": {"domain": "Telecommunication", "difficulty": "Medium"},
+        "Wireless Sensor Networks": {"domain": "Networking", "difficulty": "Easy"},
+        "Network Design and Management": {"domain": "Networking", "difficulty": "Hard"},
+        "Neuro Fuzzy and Genetic Programming": {"domain": "Machine Learning", "difficulty": "Hard"},
+        "Natural Language Processing": {"domain": "Machine Learning", "difficulty": "Hard"},
+        "Digital Image Processing": {"domain": "Computer Vision", "difficulty": "Medium"},
+        "Database Security and Privacy": {"domain": "Database System", "difficulty": "Easy"},
+        "Service Oriented Architecture": {"domain": "Software Engineering", "difficulty": "Medium"},
+        "Distributed Operating System": {"domain": "Operating Systems", "difficulty": "Medium"}
+    }
+}
